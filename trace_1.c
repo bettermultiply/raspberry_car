@@ -12,7 +12,7 @@
 
 #define LEFT 23
 #define RIGHT 25
-#define speed 40
+#define speed 50
 #define max_mee
 int SR, SL;
 
@@ -58,7 +58,7 @@ void back()
 	digitalWrite(2,HIGH);
 	digitalWrite(5,HIGH);
 	
-	delay(8);
+	delay(4);
 	digitalWrite(2, LOW);
 	digitalWrite(5, LOW);
 }
@@ -72,7 +72,7 @@ void left(int sp)
 	digitalWrite(6, HIGH);
 	softPwmWrite(1, speed*2);
 	softPwmWrite(4,speed*2);
-	delay(56);
+	delay(32);
 }
 
 void right(int sp)
@@ -84,7 +84,7 @@ void right(int sp)
 	digitalWrite(3,HIGH);
 	softPwmWrite(4,speed*2);
 	softPwmWrite(1,speed*2);
-	delay(64);
+	delay(48);
 }
 
 	
@@ -99,7 +99,10 @@ main(void)
 		SL = digitalRead(LEFT);
 		if(SL == LOW){
 			if(SR==LOW){
-				turn = 0;
+				turn -= 2;
+				if(turn < 0){
+					turn = 0;
+				}
 			  	run();
 			
 			}
@@ -108,7 +111,7 @@ main(void)
 				left(0);
 				if(turn > 2){
 					left(0);
-					delay(48);	
+					delay(32);	
 					back();
 				}
 				turn++;
@@ -119,7 +122,7 @@ main(void)
 				right(0);
 				if(turn > 2){
 					right(0);
-					delay(48);
+					delay(32);
 					back();
 				}
 				turn++;

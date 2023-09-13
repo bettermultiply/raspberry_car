@@ -56,7 +56,7 @@ void left(int sp)
 
 void right(int sp)
 {
-	softPwmWrite(4,speed*0.5 + 10*sp);
+	softPwmWrite(4,speed*0.4 + 5*sp);
 	softPwmWrite(1,speed*2 );
 	delay(32);
 }
@@ -85,7 +85,7 @@ main(void)
 			}
 			else if(SL == HIGH){ 
 				brake();
-				delay(5000);
+				break;
 			}
 		}
 	}

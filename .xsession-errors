@@ -1,4 +1,4 @@
-Xsession: X session started for betmul at Tue 12 Sep 03:26:44 BST 2023
+Xsession: X session started for betmul at Wed 13 Sep 08:06:15 BST 2023
 WARNING: tempfile is deprecated; consider using mktemp instead.
 dbus-update-activation-environment: setting DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1000/bus
 dbus-update-activation-environment: setting DISPLAY=:0
@@ -26,7 +26,7 @@ dbus-update-activation-environment: setting GDMSESSION=lightdm-xsession
 dbus-update-activation-environment: setting NO_AT_BRIDGE=1
 dbus-update-activation-environment: setting GPG_AGENT_INFO=/run/user/1000/gnupg/S.gpg-agent:0:1
 dbus-update-activation-environment: setting PWD=/home/betmul
-** Message: 03:26:49.018: main.vala:103: Session is LXDE-pi
-** Message: 03:26:49.019: main.vala:104: DE is LXDE
-** Message: 03:26:49.315: main.vala:135: log directory: /home/betmul/.cache/lxsession/LXDE-pi
-** Message: 03:26:49.315: main.vala:136: log path: /home/betmul/.cache/lxsession/LXDE-pi/run.log
+** Message: 08:06:19.674: main.vala:103: Session is LXDE-pi
+** Message: 08:06:19.674: main.vala:104: DE is LXDE
+** Message: 08:06:19.956: main.vala:135: log directory: /home/betmul/.cache/lxsession/LXDE-pi
+** Message: 08:06:19.956: main.vala:136: log path: /home/betmul/.cache/lxsession/LXDE-pi/run.log
